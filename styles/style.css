@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background: #1e1e1e;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote{
+    margin: 0;
+    padding: 0;
+}
+.content-section{
+    width: 360px;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+}
+.content-section_theme_dark{
+    background-color: black;
+    min-height: 100px;
+}
+.content-section_theme_bright{
+    background-color: yellow;
+    min-height: 100px;
+}
+
+
+.header{
+    padding: 24px 20px;
+}
+
+.cover{
+   
+}
+
+.intro{
+    padding: 30px 20px 38px;
+}
+
+.reasons{
+    padding: 40px 20px;
+}
+
+.how-to{
+    padding: 40px 20px 60px;
+}
+
+.footer{
+    padding: 20px;
+}
