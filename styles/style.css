@@ -1,50 +1,283 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
-    margin: 0;
-    background: #1e1e1e;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+  margin: 0;
+  background: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
 
 }
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote{
-    margin: 0;
-    padding: 0;
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+ol, 
+blockquote{
+  margin: 0;
+  padding: 0;
 }
 .content-section{
-    width: 360px;
-    box-sizing: border-box;
-    display: flex;
-    margin: auto;
+  width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
 }
 .content-section_theme_dark{
-    background-color: black;
-    min-height: 100px;
+  background-color: #000000;
+  color: #F5F5F5;
+    
 }
 .content-section_theme_bright{
-    background-color: yellow;
-    min-height: 100px;
+  background-color: #FEE42A;
+  color: #131313;
 }
 
-
 .header{
-    padding: 24px 20px;
+  padding: 24px 20px;
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo{
+  display: block;
+  width: 78px;
+}
+
+.header_logo-image{
+  width: 100%;
+}
+
+.header_menu{}
+
+.header_menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+
+}
+
+.header_menu-item{
+  font-size: 16px;
+  line-height: 1.2;
+  color: #F5F5F5;
+}
+
+.header_menu-item_active .header_menu-link{
+  text-decoration: none;
+}
+
+.header_menu-link{
+  color: #F5F5F5;
 }
 
 .cover{
-   
+  padding: 7px 24px 35px 20px;
+  min-height: 250px;
+  background-image: url(/styles/images/cover.svg);
+  background-repeat: no-repeat;
+  background-size: 95% auto;
+  background-position: right center;
+}
+
+.cover_title{
+  width: 100%;
+  color: #FFF;
+  font-family: EB Garamond, serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.accent-span{
+  display: block;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .intro{
-    padding: 30px 20px 38px;
+  padding: 0 20px 38px;
+  display: block;
 }
 
+.intro_heading{
+  color: #CCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.intro_title{
+  width: 203px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.2;
+  white-space: normal;
+  display: flex;
+}
+
+.intro_date{
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.intro_main-text{
+  color:#F5F5F5;
+  font-size: 16px;
+  line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
 .reasons{
-    padding: 40px 20px;
+  padding: 40px 20px;
+  color: #131313;
+  display: block;
+}
+
+.content-section_subtitle{
+font-family: EB Garamond;
+font-size: 28px;
+font-weight: 500;
+line-height: 1.15;
+margin-bottom: 32px;
+}
+
+.content-section_introduction{
+font-size: 20px;
+line-height: 1.35;
+margin-bottom: 32px;
+}
+
+.content-section_list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+
+.content-section_list-item{
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+::marker{
+  margin-right: 10px;
+}
+
+.content-section_list-accent{
+  font-weight: 700;
 }
 
 .how-to{
-    padding: 40px 20px 60px;
+  padding: 40px 20px 60px;
+  display: block;
+}
+
+.cards-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card{
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card_theme_dark{
+  background: #343434;
+  color: #F5F5F5;
+  
+}
+
+.card_theme_bright{
+  background: #FEE42A;
+  color: #131313;
+}
+
+.card_author{
+  margin: 0 136px 8px 0;
+}
+
+.card_author-photo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0 63px 8px 0;
+}
+
+.card_author-name{
+  min-width: 163px;
+  min-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  
+}
+
+.card_content{
+  line-height: 1.35;
+}
+
+.card_title{
+  min-width: 228px;
+  min-height: 29px;
+  font-family: EB Garamond, serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card_text{
+  min-width: 279px;
+  min-height: 282px;
+  font-size: 16px;
+  
 }
 
 .footer{
-    padding: 20px;
+  border-top: 1px solid #FEE42A;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_copy{
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.footer_links{
+  font-size: 14px;
+  line-height: 1.25;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.links-decoration{
+  text-decoration: none;
+  color:#F5F5F5;
 }
